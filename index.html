@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM - Security Incident Mapping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SIM</h1>
+    <p>Security Incident Mapping System</p>
+</header>
+
+<main class="container">
+    <h2>Report Campus Security Incidents</h2>
+
+    <p>
+        Help improve campus safety by reporting incidents such as theft,
+        assault, robbery, harassment, or any other security concern.
+    </p>
+
+    <button id="reportBtn">Report an Incident</button>
+
+    <div id="reportForm" style="display:none;">
+
+        <h3>Incident Report Form</h3>
+
+        <label>Incident Type</label>
+
+        <select id="incident">
+            <option>Theft</option>
+            <option>Assault</option>
+            <option>Stabbing</option>
+            <option>Harassment</option>
+            <option>Robbery</option>
+            <option>Other</option>
+        </select>
+
+        <label>Location</label>
+        <input type="text" placeholder="Enter incident location">
+
+        <label>Description</label>
+        <textarea placeholder="Describe what happened"></textarea>
+
+        <label>
+            <input type="checkbox">
+            Report Anonymously
+        </label>
+
+        <button id="submitBtn">Submit Report</button>
+
+    </div>
+
+    <div id="success" style="display:none;">
+        <h3>Report Submitted Successfully!</h3>
+        <p>Your reference number is:</p>
+
+        <h2 id="refNumber"></h2>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
